@@ -1,12 +1,8 @@
 <template>
-  <transition name="fade">
-    <router-view></router-view>
-  </transition>
-  <!-- <main-application /> -->
-  <!-- <div class="wrapper">
-    <router-view></router-view>
+  <div class="wrapper">
+    <!-- <router-view></router-view> -->
 
-     <side-bar @changeMainAppState="changeMainAppState" />
+    <side-bar @changeMainAppState="changeMainAppState" :admin="this.admin" />
 
     <div id="content">
       <nav-bar />
@@ -14,19 +10,17 @@
       <div class="line"></div>
 
       <main-app :mainAppState="this.mainAppState" />
-
-     
-    </div> 
-  </div> -->
+    </div>
+  </div>
 </template>
 
 <script>
-// import NavBar from './components/NavBar.vue';
-// import SideBar from './components/SideBar.vue';
-// import MainApp from './components/MainApp.vue';
-//import mainApplication from './components/MainApplication.vue';
+import NavBar from './NavBar.vue';
+import SideBar from './SideBar.vue';
+import MainApp from './MainApp.vue';
 
 export default {
+  props: ['admin'],
   data: function() {
     return {
       mainAppState: {
@@ -37,12 +31,11 @@ export default {
       }
     };
   },
-  //components: {
-  // 'main-application': mainApplication
-  //   'nav-bar': NavBar,
-  //   'side-bar': SideBar,
-  //   'main-app': MainApp
-  // },
+  components: {
+    'nav-bar': NavBar,
+    'side-bar': SideBar,
+    'main-app': MainApp
+  },
   methods: {
     stateChange(spy) {
       Object.keys(spy).forEach(function(key) {
@@ -59,16 +52,6 @@ export default {
 </script>
 
 <style>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.25s ease-out;
-}
-
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
-
 .wrapper {
   display: flex;
   width: 100%;

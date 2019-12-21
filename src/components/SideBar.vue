@@ -9,22 +9,11 @@
       <p>Admin</p>
       <li>
         <a @click="changeMainAppState('homeApp')">HomeApp</a>
-        <!-- <ul class="collapse list-unstyled" id="homeSubmenu">
-          <li>
-            <a href="#" @click="testClick">Home 1</a>
-          </li>
-          <li>
-            <a href="#">Home 2</a>
-          </li>
-          <li>
-            <a href="#">Home 3</a>
-          </li>
-        </ul>-->
       </li>
-      <li>
+      <li v-if="this.admin">
         <a @click="changeMainAppState('Dashboard')">Dashboard</a>
       </li>
-      <li>
+      <li v-if="this.admin">
         <a @click="changeMainAppState('Admin Manager')">Admin Manager</a>
       </li>
 
@@ -34,8 +23,11 @@
     </ul>
 
     <ul class="list-unstyled CTAs">
-      <li>
-        <a class="download">Logout</a>
+      <li v-if="this.admin">
+        <a class="download" @click="logout">Logout</a>
+      </li>
+      <li v-if="!this.admin">
+        <a class="download" @click="goToHomePage">go to homePage </a>
       </li>
     </ul>
   </nav>
@@ -43,12 +35,16 @@
 
 <script>
 export default {
+  props: ['admin'],
   methods: {
     changeMainAppState(element) {
       this.$emit('changeMainAppState', element);
     },
-    testClick() {
-      alert('clicked');
+    goToHomePage() {
+      this.$router.push({ name: 'home-page' });
+    },
+    logout() {
+      this.$router.push({ name: 'home-page' });
     }
   }
 };
