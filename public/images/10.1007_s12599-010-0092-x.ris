@@ -1,0 +1,17 @@
+TY  - JOUR
+AU  - Hinz, Oliver
+AU  - Eckert, Jochen
+PY  - 2010
+DA  - 2010/04/01
+TI  - The Impact of Search and Recommendation Systems on Sales in Electronic Commerce
+JO  - Business & Information Systems Engineering
+SP  - 67
+EP  - 77
+VL  - 2
+IS  - 2
+AB  - The Internet and related technologies have vastly expanded the variety of products that can be profitably promoted and sold by online retailers. Furthermore, search and recommendation tools reduce consumers’ search costs in the Internet and enable them to extend their search from a few easily found best-selling products (blockbusters) to a large number of less frequently selling items (niches). As a result, Long Tail sales distribution patterns emerge that illustrate an increasing demand in niches. We show in this article how different classes of search and recommendation tools affect the distribution of sales across products, total sales, and consumer surplus. We hereby use an agent-based simulation which is calibrated based on real purchase data of a video-on-demand retailer. We find that a decrease in search costs through improved search technology can either shift demand from blockbusters to niches (search filters and recommendation systems) or from niches to blockbusters (charts and top lists). We break down demand changes into substitution and additional consumption and show that search and recommendation technologies can lead to substantial profit increases for retailers. We also illustrate that decreasing search costs through search and recommendation technologies always lead to an increase in consumer surplus, suggesting that retailers can use these technologies as competitive advantage.
+SN  - 1867-0202
+UR  - https://doi.org/10.1007/s12599-010-0092-x
+DO  - 10.1007/s12599-010-0092-x
+ID  - Hinz2010
+ER  - 

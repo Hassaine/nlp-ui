@@ -7,10 +7,7 @@
     <div class="img-wrap">
       <div class="owl-carousel slide-one-item hero-slider">
         <div class="slide">
-          <img
-            src="../../public/images/natural-language-processing.png"
-            alt="Image"
-          />
+           <img src="../../public/images/natural-language-processing.png" alt="Image" /> 
         </div>
       </div>
     </div>
@@ -23,18 +20,12 @@
             </div>
             <div class="text">
               <p>
-                <a
-                  @click="goToLogin"
-                  target="_blank"
-                  class="btn btn-outline-primary btn-md"
+                <a @click="goToLogin" class="btn btn-outline-primary btn-md"
                   >login</a
                 >
               </p>
               <p>
-                <a
-                  @click="goToApp"
-                  target="_blank"
-                  class="btn btn-outline-primary btn-md"
+                <a @click="goToApp" class="btn btn-outline-primary btn-md"
                   >use the app</a
                 >
               </p>
