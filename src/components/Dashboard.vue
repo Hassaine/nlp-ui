@@ -1,11 +1,18 @@
 <template>
   <div class="row">
-    <h1>dashboard</h1>
+    <div class="col">
+      <bar-chart></bar-chart>
+    </div>
   </div>
 </template>
 
 <script>
-export default {};
+import Barchart from "./Charts/Barchart.vue";
+export default {
+  components: {
+    "bar-chart": Barchart
+  }
+};
 </script>
 
 <style>
