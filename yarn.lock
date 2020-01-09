@@ -10025,6 +10025,18 @@ yorkie@^2.0.0:
     normalize-path "^1.0.0"
     strip-indent "^2.0.0"
 
+zingchart-vue@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/zingchart-vue/-/zingchart-vue-1.0.1.tgz#8a30220eb9391e4491182c9a3d78e2fa32902309"
+  integrity sha512-5iALRB/ZWQnuYfA0XpJanNrWDaBqLBONpsnIrh/PDI7NWslGUMZWLfxPyBgptlLgg1ohhf3JnBs4I3lK1ZCQ2A==
+  dependencies:
+    zingchart "^2.8.7"
+
+zingchart@^2.8.7:
+  version "2.8.8"
+  resolved "https://registry.yarnpkg.com/zingchart/-/zingchart-2.8.8.tgz#3109deaf2bbb4bba420bce5ff041b7eaea241caa"
+  integrity sha512-EqVeS80v5K3CAGPN6k2PtopiUJfDBD3Rnyov9vOtES9DA/t1vFlAi5Bt63dSOlbNXN+hzA5m+1CS5Jn8RhHXhw==
+
 zip-stream@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/zip-stream/-/zip-stream-1.2.0.tgz#a8bc45f4c1b49699c6b90198baacaacdbcd4ba04"
