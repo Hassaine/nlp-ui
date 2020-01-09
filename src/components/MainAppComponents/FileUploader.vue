@@ -51,14 +51,14 @@ export default {
       let formData = new FormData();
       formData.append("file", this.file);
       axios
-        .post("http://127.0.0.1:4200/upload", formData, {
+        .post("http://127.0.0.1:5000/tag-file", formData, {
           headers: {
             "Content-Type": "multipart/form-data"
           }
         })
         .then(response => {
           console.log(response);
-          this.result = { data: response.data };
+          this.result = { data: JSON.parse(response.data.data) };
 
           this.currentStatus = STATUS_SUCCESS;
         })

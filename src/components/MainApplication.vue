@@ -15,26 +15,26 @@
 </template>
 
 <script>
-import NavBar from './NavBar.vue';
-import SideBar from './SideBar.vue';
-import MainApp from './MainApp.vue';
+import NavBar from "./NavBar.vue";
+import SideBar from "./SideBar.vue";
+import MainApp from "./MainApp.vue";
 
 export default {
-  props: ['admin'],
+  props: ["admin"],
   data: function() {
     return {
       mainAppState: {
         homeApp: true,
         Dashboard: false,
-        'Admin Manager': false,
+        "Admin Manager": false,
         Contact: false
       }
     };
   },
   components: {
-    'nav-bar': NavBar,
-    'side-bar': SideBar,
-    'main-app': MainApp
+    "nav-bar": NavBar,
+    "side-bar": SideBar,
+    "main-app": MainApp
   },
   methods: {
     stateChange(spy) {
@@ -100,12 +100,12 @@ export default {
 }
 
 #sidebar ul li.active > a,
-a[aria-expanded='true'] {
+a[aria-expanded="true"] {
   color: #fff;
   background: #6d7fcc;
 }
 
-a[data-toggle='collapse'] {
+a[data-toggle="collapse"] {
   position: relative;
 }
 
@@ -162,15 +162,15 @@ a.article:hover {
 /*
     ADDITIONAL DEMO STYLE, NOT IMPORTANT TO MAKE THINGS WORK BUT TO MAKE IT A BIT NICER :)
 */
-@import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700';
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #fafafa;
 }
 
 p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.1em;
   font-weight: 300;
   line-height: 1.7em;
@@ -218,7 +218,7 @@ a:focus {
 }
 
 #sidebar ul li.active > a,
-a[aria-expanded='true'] {
+a[aria-expanded="true"] {
   color: #fff;
   background: #6d7fcc;
 }

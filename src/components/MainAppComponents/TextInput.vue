@@ -21,11 +21,14 @@ export default {
   methods: {
     submitText() {
       axios
-        .post("http://127.0.0.1:4200/textprocessing", {
-          data: this.text
-        })
+        .post(
+          "http://127.0.0.1:5000/tag-text",
+          { Function: "taggText", Text: this.text },
+          { "Content-Type": "application/json" }
+        )
         .then(response => {
-          this.result = { data: response.data };
+          // console.log(response);
+          this.result = { data: JSON.parse(response.data.Result) };
         })
         .catch(error => {
           this.result = { error: error };
